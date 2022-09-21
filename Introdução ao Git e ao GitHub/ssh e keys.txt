@@ -1,0 +1,8 @@
+ssh e keys
+
+no git bassh usar o comando ssh-keygen -t ed25519 -C e o email que usa no github.
+usando o comando {cd /c/Users/WIN11/.ssh/} te levará para dentro da pasta ssh.
+Dentro da pasta usar o comando {ls} para mostrar a chave pública e privada.
+Com o comando {cat id_ed25519.pub} será mostrado a chave pública para que seja colocado no github.
+com o comando {eval $(ssh-agent -s)} ele mostrará o pid da vez.
+com o comando {ssh-add id_ed25519} será possivel descriptografar os repositórios.

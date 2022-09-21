@@ -1,0 +1,25 @@
+-GIT INIT
+ele cria uma pasta oculta.
+Pode ser vista somente com o comando "ls -a".
+com o comando "cd .git/" para entrar dentro da pasta, será
+possivel usar o comando "ls" para ver o que tem dentro dessa
+pasta oculta.
+
+-GIT ADD
+o comando GIT ADD é usando junto com *
+-GIT COMMIT
+
+git config --global user.email "gana_e@outlook.com.br"
+git config --global user.name
+
+git config --global é um comando de configuração que é necessario fazer
+é uma configuração inicial para quem usa o git pela primeira vez.
+o git pede o e-mail e um username.
+Necessário para que o commit tenha um autor
+
+git add nomeArquivo
+
+git add *
+
+git add. "adiciona todos as modificaçoes repositorio local para 
+staging are"

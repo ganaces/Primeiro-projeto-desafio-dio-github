@@ -1,0 +1,81 @@
+COMANDOS BASÍCO PARA NAVERGAR NO PROMPT
+-CD: PARA NAVEGAR ENTRE AS PASTAS
+-DIR: PARA SABER O QUE TEM DENTO DAS PASTAS
+-MKDIR: PARA CRIAR PARA
+- DEL/RMDIR: PARA DELETAR PASTAS.
+Obs: DEL é para excluir arquivos.
+RMDIR é para excluir as pastas/repositórios..
+rmdir (a pasta que for excluir) /S /Q
+
+---------------------------------------------------------------------------------------------------------------------------
+                                    ENTENDENDO GIT
+
+---Tópicos---
+-SHA1
+-Objetos fundamentais
+-Sistema distribuído
+-Segurança
+
+-SHA1: A sigla SHA significa SECURE HASH ALGORITHM (Algoritmo de HASH seguro
+), é um conjunto de funções hash criptgráficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+
+A encriptação gera um conjunto de caracteres identificador de 40 dígitos.
+É uma forma curta de representar um arquivo.
+
+EX:. 
+1 echo "Olá mundo" | openssl sha1
+2 > (stdin)= f9fc85e559b9501...	
+
+
+
+
+-Objetos fundamentais: 
+BLOBS
+TREES
+COMMINTS
+
+
+BLOBS{
+ex:. 1 echo 'conteudo' | git hash-object --stdin
+2 > ........
+3
+4 echo -e 'conteudo' | openssl sha1
+5 > ........
+
+arquivos ficam guardados dentro do objeto BLOB. Blob contém metadados. 
+Ele vai ter o tipo do Objeto, o tamanho da string ou arquivo, uma \0 
+e com conteudo de fato do arquivo.
+Blob é o primeiro objeto e ele não guarda o nome do arquivo, someente o sha1 que são os
+caracteres do arquivo.
+
+}
+
+Árvores/TREE{
+tree é o segundo objeto. tree armazena os blobs, tipos de blobs diferentes.
+que por sua vez tem um sha1 e o tree guarda o nome do arquivo, monta a estrutura
+de onde tá localizado os arquivos.
+A tree será responsável para apontar para blobs ou outras tree.
+
+E por que o comportamento é dessa forma?
+Porque os diretórios dentro do sistema operácional podem conter
+outros diretórios. Então o Git usa um objeto recursivo.
+ex:. As Trees podem apontar para outras trees, da mesma forma
+como um diretório possa apontar para outro diretório.
+
+Tree também tem um sha1 desses metas dados, as bolhas/blobs elas tem o sha1
+no arquivo, ás trees apontam para blobs e tem um sha1 criptado com os meta
+dados das tree. Caso ocorra de alguma alteração mesmo que seja uma vírgula
+dentro da blob na qual a tree esteja apontando, a de ser alterado a criptografia do sha1 da blob em que
+a tree tá apontando.
+
+
+COMMIT{
+Aponta para tree
+Aponta para um parente (commit realizado antes dele)
+Aponta para um Autor
+Aponta para uma Mensagem
+
+}
+
+}
+

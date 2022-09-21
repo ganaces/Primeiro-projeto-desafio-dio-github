@@ -1,0 +1,17 @@
+ git config --global --unset user.name "Gana"
+git config --global --unset user.email} para apagar nome e email, caso no git esteja com outro nome email.
+
+
+
+git config list} para listar o name e o email que foram atrelados.
+
+git remote add origin} comando para mostrar no github junto com o link do repositorio
+
+
+git push origin master} empurra o repositorio ao git
+git pull origin master} trás do git o repositorio alterado e que foi lançado ao git.
+
+git add *} adiciona o repositorio ao git
+git commit -m ""} adiciona uma legenda a modificação mais recente do repositorio.
+git status} mostra se tem repositorio a ser adicionado
+ 
