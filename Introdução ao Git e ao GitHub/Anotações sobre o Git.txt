@@ -75,7 +75,5 @@ Aponta para um parente (commit realizado antes dele)
 Aponta para um Autor
 Aponta para uma Mensagem
 
-}
 
-}
 
