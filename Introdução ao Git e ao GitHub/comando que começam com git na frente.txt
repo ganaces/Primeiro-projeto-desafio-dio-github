@@ -1,25 +1,20 @@
--GIT INIT
-ele cria uma pasta oculta.
-Pode ser vista somente com o comando "ls -a".
+# GIT INIT #--> O comando cria um novo repositório do Git. Ele pode ser usado para converter um projeto existente e não versionado em um repositório do Git ou inicializar um novo repositório vazio.
+
+## LS ##--> O comando do Bash ls é usado para listar o conteúdo do diretório de trabalho atual. O ls é equivalente ao DIR em terminais de host do console do Windows.
+
+OBS{Pode ser vista somente com o comando "ls -a".
 com o comando "cd .git/" para entrar dentro da pasta, será
 possivel usar o comando "ls" para ver o que tem dentro dessa
-pasta oculta.
+pasta oculta}.
 
--GIT ADD
-o comando GIT ADD é usando junto com *
--GIT COMMIT
 
-git config --global user.email "gana_e@outlook.com.br"
-git config --global user.name
+#GIT COMMIT# --> O git permite que os desenvolvedores criem arquivos que não sejam versionados, ou seja, eles serão ignorados pelo repositório. Para isto basta criar um arquivo com um ponto no inicio do nome como, por exemplo, ".
 
 git config --global é um comando de configuração que é necessario fazer
 é uma configuração inicial para quem usa o git pela primeira vez.
 o git pede o e-mail e um username.
 Necessário para que o commit tenha um autor
 
-git add nomeArquivo
 
-git add */./-A
-
-git add. "adiciona todos as modificaçoes repositorio local para 
-staging are"
+# GIT ADD #--> adiciona todos as modificaçoes repositorio LOCAL para O repositorio REMOTO
+o comando GIT ADD é usando junto com *
